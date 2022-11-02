@@ -8,7 +8,7 @@ class TestMain(unittest.TestCase):
         ('bitcoin', 'usd', None), # happy path
     ]
     def test_ticker_to_coingecko_id(self):
-        self.assertEqual(main.ticker_to_coingecko_id('BTC'), 'bitcoin') # happy path
+        self.assertEqual(main.ticker_to_coingecko_id('btc'), 'bitcoin') # happy path
         with self.assertRaises(main.CoinNotFoundException):
             main.ticker_to_coingecko_id('NOEXIST')
 
