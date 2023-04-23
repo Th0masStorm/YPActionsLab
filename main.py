@@ -39,7 +39,7 @@ def get_rate_from_coingecko(base_currency: str, quote_currency: str) -> float:
 
 @app.route("/")
 def handle_index() -> str:
-    return json.dumps({"msg": "hello"})
+    return json.dumps({"msg": "hello, practicum students!"})
 
 @app.route("/rate")
 def handle_rate() -> str:
